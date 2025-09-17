@@ -134,8 +134,7 @@ inputs.forEach((input, idx)=>{
     if(e.key==='Backspace' && !input.value && idx>0){ inputs[idx-1].focus(); }
   });
 });
-
-// Ukryte odpowiedzi w Base64
+  
 const encodedAnswer = 'dnBuanNjc3M='; 
 const answer = atob(encodedAnswer).split('');
 
@@ -203,3 +202,4 @@ window.addEventListener('resize',()=>{ dinos.forEach(dino=>{ dino.x=random(0,win
 </script>
 </body>
 </html>
+
